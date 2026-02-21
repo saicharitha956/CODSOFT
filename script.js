@@ -14,7 +14,7 @@ buttons.forEach(function(button) {
 
         let value = this.innerText;
 
-        // NUMBER OR DECIMAL
+        
         if (!isNaN(value) || value === ".") {
 
             cursor.style.display = "inline-block";
@@ -28,7 +28,7 @@ buttons.forEach(function(button) {
             }
         }
 
-        // OPERATOR
+        
         else if (value === "+" || value === "-" || value === "*" || value === "/" || value === "%") {
 
             if (firstNumber !== "") {
@@ -39,7 +39,7 @@ buttons.forEach(function(button) {
             }
         }
 
-        // EQUAL
+        
         else if (value === "=") {
 
             if (firstNumber !== "" && secondNumber !== "") {
@@ -57,10 +57,10 @@ buttons.forEach(function(button) {
                 expressionDisplay.innerText = firstNumber + " " + operator + " " + secondNumber;
                 resultText.innerText = result;
 
-                // Hide cursor after showing result
+                
                 cursor.style.display = "none";
 
-                // Reset for next calculation
+            
                 firstNumber = result.toString();
                 secondNumber = "";
                 operator = "";
@@ -68,7 +68,7 @@ buttons.forEach(function(button) {
             }
         }
 
-        // CLEAR
+        
         else if (value === "C") {
 
             firstNumber = "";
@@ -79,11 +79,11 @@ buttons.forEach(function(button) {
             expressionDisplay.innerText = "";
             resultText.innerText = "";
 
-            // Show cursor again
+            
             cursor.style.display = "inline-block";
         }
 
-        // DELETE
+        
         else if (value === "DEL") {
 
             cursor.style.display = "inline-block";
