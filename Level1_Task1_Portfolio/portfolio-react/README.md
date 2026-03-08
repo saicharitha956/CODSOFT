@@ -8,12 +8,12 @@ This project is a personal portfolio website created as part of the CodSoft Web 
 
 The portfolio website contains the following sections:
 
- **Home** – Introduction and welcome section
- **About** – Information about the developer
-**Skills** – Technologies and programming skills
-**Projects** – List of projects developed
-**certifications** - list of certifications done
-**Contact** – Contact details or form to reach the developer
+* **Home** – Introduction and welcome section
+* **About** – Information about the developer
+* **Skills** – Technologies and programming skills
+* **Projects** – List of projects developed
+* **certifications** - list of certifications done
+* **Contact** – Contact details or form to reach the developer
 
 ## Technologies Used
 
